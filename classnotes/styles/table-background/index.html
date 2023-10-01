@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        font-size: 2rem;
+        color: #fff;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        background-color: tomato;
+        background-image: url(./imgs/clock.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 -100px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: multiply;
+        /* background: tomato url(../img/clock.jpg) 0 -100px / cover no-repeat fixed;*/
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 300px;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      thead tr {
+        background-color: #334155;
+        color: #fff;
+      }
+
+      .table-striped td,
+      .table-striped th {
+        border: 1px solid #000;
+        padding: 0.2rem 0.5rem;
+      }
+
+      .table-striped tr:nth-child(2n) {
+        background-color: #e2e8f0;
+      }
+
+      .table-hover td,
+      .table-hover th {
+        border-bottom: 1px solid #000;
+        padding: 0.2rem 0.5rem;
+      }
+
+      .table-hover tr:hover {
+        background-color: #e2e8f0;
+      }
+
+      .container {
+        width: 992px;
+        margin: auto;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">Exemplo de Tabelas</h1>
+    </header>
+    <main class="container">
+      <h2>Table Striped</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati
+        tempora sunt ipsa dolorem dignissimos repellat impedit veritatis non!
+        Sapiente hic perspiciatis voluptate voluptas, odio magni fugiat fuga
+        laudantium ad!
+      </p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Linguagem</th>
+            <th>Utilização</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>14.51%</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>14.41%</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>13.23%</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>12.96%</td>
+          </tr>
+          <tr>
+            <td>C#</td>
+            <td>8.21%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Table Hover</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati
+        tempora sunt ipsa dolorem dignissimos repellat impedit veritatis non!
+        Sapiente hic perspiciatis voluptate voluptas, odio magni fugiat fuga
+        laudantium ad!
+      </p>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Linguagem</th>
+            <th>Utilização</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>14.51%</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>14.41%</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>13.23%</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>12.96%</td>
+          </tr>
+          <tr>
+            <td>C#</td>
+            <td>8.21%</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
