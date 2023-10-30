@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      @media print {
+        h1 {
+          text-align: left;
+        }
+      }
+
+      @media screen and (max-width: 510px) {
+        aside {
+          display: none;
+        }
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media screen and (min-width: 510px) {
+        section {
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin: 1rem;
+        }
+
+        section > div {
+          flex-basis: calc(100% / 2);
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        section > div {
+          flex-basis: calc(100% / 3);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Design</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt,
+      officiis debitis, ea doloremque ipsum ducimus, ut deleniti cumque saepe
+      asperiores consequatur cum voluptatibus impedit sequi placeat sed pariatur
+      eum quasi?
+    </p>
+    <p>
+      Eveniet veniam voluptas facere laudantium, totam doloremque. Officia
+      quaerat libero, enim consectetur est mollitia id amet consequatur eaque
+      dolorem aperiam quidem. Aperiam id, consequuntur sint expedita laboriosam
+      non error eum?
+    </p>
+    <p>
+      Dolor dignissimos et, iure tenetur voluptatibus nesciunt laudantium
+      necessitatibus, deserunt ipsam minus omnis ullam perferendis sapiente quae
+      consequuntur! Exercitationem animi fugit magni quia debitis maiores in
+      totam a consequuntur accusamus?
+    </p>
+    <p>
+      Distinctio nulla corporis, asperiores alias magnam debitis ab dolorum a,
+      recusandae temporibus aut sit maxime ullam error dolorem vitae et laborum
+      possimus explicabo illo eligendi. Consequuntur sint voluptatibus
+      asperiores aperiam.
+    </p>
+    <p>
+      Expedita, nobis reprehenderit officia enim dolores suscipit impedit
+      reiciendis veritatis velit illo. Expedita obcaecati velit iure doloribus
+      dignissimos odit qui provident molestias voluptatum quia necessitatibus,
+      porro recusandae officiis nulla quam.
+    </p>
+
+    <aside>
+      <h2>Outro texto</h2>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est eligendi
+        magnam ducimus minus. Perferendis eaque dicta dignissimos maxime
+        maiores? Nostrum modi adipisci omnis ullam in quibusdam quo odit magnam
+        libero.
+      </p>
+      <p>
+        Numquam omnis aliquid nisi culpa eius blanditiis explicabo dolorem
+        architecto ratione ex, qui dolores soluta impedit tempora modi
+        accusantium, laborum fugit doloremque cupiditate. Quae eum culpa
+        deserunt reprehenderit recusandae hic.
+      </p>
+    </aside>
+
+    <section>
+      <div>
+        <h3>Título</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div>
+        <h3>Título</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div>
+        <h3>Título</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div>
+        <h3>Título</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </section>
+  </body>
+</html>
